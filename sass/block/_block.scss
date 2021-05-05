@@ -1,0 +1,102 @@
+.block {
+    margin-top: 120px;
+    padding-right: 194px;
+    padding-bottom: 108px;
+    display: flex;
+    justify-content: space-between;
+    &__slider {
+        max-width: 971px;
+        width: 100%;
+        &_keys {
+            height: 190px;
+            padding-left: 14px;
+        }
+        &_item {
+            width: 255px;
+            &-text {
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 44px;
+                line-height: 2.25;
+                text-align: center;
+                color: #ffffff;
+            }
+        }
+        .owl-item.active + .active + .active {
+            width: 390px !important;
+            height: 645px;
+            padding: 34px 20px;
+            border: solid 1px rgba(221, 177, 140, 0.79);
+            img {
+                width: 330px;
+                height: 510px;
+            }
+            .block__slider_item {
+                width: 346px;
+            }
+        }
+        .owl-item.active,
+        .owl-item.active + .active {
+            width: 255px !important;
+            height: 376px;
+        }
+        .owl-theme .owl-nav {
+            position: relative;
+            top: -100px;
+        }
+    }
+    &__descr {
+        max-width: 620px;
+        width: 100%;
+        &_info {
+            padding-left: 15px;
+        }
+        &_info + &_info {
+            margin-top: 30px;
+        }
+        &_bl {
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 1;
+            color: #ffffff;
+        }
+        &_price {
+            margin-top: 44px;
+            font-family: "OpenSans", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.17;
+            color: #ffffff;
+        }
+        &_num {
+            margin-top: 7px;
+            margin-bottom: 63px;
+            font-size: 48px;
+            font-weight: bold;
+        }
+        &_txt {
+            font-weight: bold;
+            color: #ffffff;
+            position: relative;
+            line-height: 1.87;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                top: 10px;
+                left: -15px;
+                background-color: #b69375;
+            }
+        }
+
+        &_text {
+            font-family: "OpenSans", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.87;
+            color: #a7a7a7;
+        }
+    }
+}

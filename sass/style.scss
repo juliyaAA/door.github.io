@@ -1,0 +1,153 @@
+* {
+    font-family: "Fira Sans", sans-serif;
+    box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+img,
+ul,
+li,
+form,
+label,
+footer,
+header,
+nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+img {
+    display: block;
+    // max-width: 100%;
+    // max-height: 100%;
+    margin: 0 auto;
+}
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: visible;
+    background-color: #24231f;
+}
+.container {
+    max-width: 1550px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 0 15px;
+}
+.band {
+    margin-top: 30px;
+    width: 51px;
+    height: 1px;
+    background-color: #dcb08d;
+}
+.width {
+    max-width: 1355px;
+    width: 100%;
+    margin-top: 0;
+}
+.advantages {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fefefe;
+    text-transform: uppercase;
+}
+.nav-size {
+    font-size: 18px;
+    line-height: 1.67;
+    transition: 0.5s all;
+    &.active {
+        color: #dcb08d;
+    }
+}
+.app {
+    margin-top: 20px;
+}
+.top {
+    margin-top: 110px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.button {
+    border-radius: 4px;
+    border: solid 2px rgba(221, 177, 140, 0.79);
+    width: 170px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s all;
+    text-transform: uppercase;
+    &:hover {
+        opacity: 0.4;
+    }
+}
+.messenger__contack {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    cursor: pointer;
+    transition: 0.5s all;
+    &:last-child {
+        margin-top: 26px;
+    }
+    a:hover {
+        color: #dcb08d;
+        text-decoration: underline;
+    }
+}
+.horizontal {
+    writing-mode: unset;
+    transform: rotate(1deg);
+    display: inline-block;
+}
+.horizontal + .horizontal {
+    margin-left: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/");
+    src: local("Open Sans Regular"), local("OpenSans-Regular"),
+        url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@import "block/head";
+@import "block/wrapper";
+@import "block/block";
+@import "block/main";
+@import "block/inner";
+@import "block/back";
+@import "block/footer";
+@import "block/media";

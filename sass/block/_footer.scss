@@ -1,0 +1,31 @@
+.footer {
+    padding: 55px 0;
+    &__items {
+        margin-top: 56px;
+        &_text {
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.71;
+            color: #fefefe;
+        }
+    }
+    &__feedback {
+        position: relative;
+        margin-top: 18px;
+        &_subcat {
+            margin-right: 30px;
+        }
+        &_img {
+        margin-top: 32px;
+        width: 158px;
+        height: 53px;
+        }
+        &_telegram {
+            position: absolute;
+            right: 0;
+            top: -5px;
+
+        }
+    }
+}
